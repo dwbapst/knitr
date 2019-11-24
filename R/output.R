@@ -145,7 +145,7 @@ knit = function(
     knit_log$restore()
     on.exit(chunk_counter(reset = TRUE), add = TRUE) # restore counter
     # if revbayes counter exists, restore revbayes counter
-    if(exists('.rb_chunk_counter'){
+    if(exists('.rb_chunk_counter')){
       on.exit(.rb_chunk_counter(reset = TRUE), add = TRUE)
     }
     adjust_opts_knit()
